@@ -1,0 +1,25 @@
+exports[`<ApplicationListItem /> should render a application 1`] = `
+<div
+  className="bTmpoo card">
+  <div
+    className="card-block">
+    <h4
+      className="card-title">
+      TestApplication
+    </h4>
+    <p
+      className="card-text">
+      Test ...
+    </p>
+  </div>
+  <div
+    className="card-block">
+    <a
+      className="card-link"
+      onClick={[Function]}
+      style={Object {}}>
+      Inspect
+    </a>
+  </div>
+</div>
+`;

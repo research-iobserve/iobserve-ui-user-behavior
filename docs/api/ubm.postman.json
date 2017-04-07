@@ -1,0 +1,154 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "0489bf15-519d-4c5d-a381-fb6b112b4fad",
+			"name": "applications",
+			"folders": [
+				{
+					"order": [
+						"f88e1cac-29e3-455a-9eb3-129fdaae3604",
+						"40004c41-81b8-4950-9586-d6c8ee7f839c",
+						"6805978a-4949-4d5c-9465-e12dd948dd05",
+						"8cbce4ba-668b-4167-a81f-89031444fcd8",
+						"c57e6f7f-56eb-4d7d-ac85-4eab361710f2",
+						"9aa20b0f-ce10-41d1-be4e-a5f5729220fa"
+					],
+					"name": "applications",
+					"id": "f2a64467-ab2b-4c31-9a08-95ad5fb2e922",
+					"collection_name": "",
+					"collection_id": "",
+					"collection": "",
+					"owner": 0
+				}
+			],
+			"requests": [
+				{
+					"id": "d66d8ae6-89a5-4d9b-b683-4b4960e38bbd",
+					"url": "http://localhost:8080/ubm-backend/v1/applications",
+					"method": "GET",
+					"collectionId": "0489bf15-519d-4c5d-a381-fb6b112b4fad",
+					"name": "Get All Applications",
+					"description": "",
+					"headers": "",
+					"dataMode": "raw",
+					"data": ""
+				},
+				{
+					"id": "54df6e6f-c4f7-44ff-9f49-62ad8883ce67",
+					"url": "http://localhost:8080/ubm-backend/v1/applications/1",
+					"method": "GET",
+					"collectionId": "0489bf15-519d-4c5d-a381-fb6b112b4fad",
+					"name": "Get Application",
+					"description": "",
+					"headers": "",
+					"dataMode": "raw",
+					"data": ""
+				},
+				{
+					"id": "02614b6f-e89d-4a54-82f7-402562eb4264",
+					"url": "http://localhost:8080/ubm-backend/v1/applications",
+					"method": "POST",
+					"collectionId": "0489bf15-519d-4c5d-a381-fb6b112b4fad",
+					"name": "Create Application",
+					"description": "",
+					"headers": "Content-Type: application/json; charset=utf-8",
+					"dataMode": "raw",
+					"data": "{\"name\":\"example.com\"}"
+				},
+				{
+					"id": "4ebf96a2-d09c-4470-b225-90d9220cf9d7",
+					"url": "http://localhost:8080/ubm-backend/v1/applications/1",
+					"method": "DELETE",
+					"collectionId": "0489bf15-519d-4c5d-a381-fb6b112b4fad",
+					"name": "Delete Application",
+					"description": "",
+					"headers": "",
+					"dataMode": "raw",
+					"data": ""
+				},
+				{
+					"id": "f88e1cac-29e3-455a-9eb3-129fdaae3604",
+					"url": "http://localhost:8080/ubm-backend/v1/applications/1/visits",
+					"method": "GET",
+					"collectionId": "0489bf15-519d-4c5d-a381-fb6b112b4fad",
+					"name": "Get All Visits",
+					"description": "",
+					"headers": "",
+					"dataMode": "raw",
+					"data": "",
+					"folder": "f2a64467-ab2b-4c31-9a08-95ad5fb2e922"
+				},
+				{
+					"id": "40004c41-81b8-4950-9586-d6c8ee7f839c",
+					"url": "http://localhost:8080/ubm-backend/v1/applications/1/visits",
+					"method": "POST",
+					"collectionId": "0489bf15-519d-4c5d-a381-fb6b112b4fad",
+					"name": "Create Visit",
+					"description": "",
+					"headers": "Content-Type: application/json; charset=utf-8",
+					"dataMode": "raw",
+					"data": "{\"start\":{\"id\":\"86\",\"name\":\"Product B\"},\"end\":{\"id\":\"13\",\"name\":\"Product C\"},\"count\":\"123\"}",
+					"folder": "f2a64467-ab2b-4c31-9a08-95ad5fb2e922"
+				},
+				{
+					"id": "6805978a-4949-4d5c-9465-e12dd948dd05",
+					"url": "http://localhost:8080/ubm-backend/v1/applications/1/visits/45",
+					"method": "DELETE",
+					"collectionId": "0489bf15-519d-4c5d-a381-fb6b112b4fad",
+					"name": "Delete Visit",
+					"description": "",
+					"headers": "",
+					"dataMode": "raw",
+					"data": "",
+					"folder": "f2a64467-ab2b-4c31-9a08-95ad5fb2e922"
+				},
+				{
+					"id": "8cbce4ba-668b-4167-a81f-89031444fcd8",
+					"url": "http://localhost:8080/ubm-backend/v1/applications/1/pages",
+					"method": "GET",
+					"collectionId": "0489bf15-519d-4c5d-a381-fb6b112b4fad",
+					"name": "Get All Pages",
+					"description": "",
+					"headers": "",
+					"dataMode": "raw",
+					"data": "",
+					"folder": "f2a64467-ab2b-4c31-9a08-95ad5fb2e922"
+				},
+				{
+					"id": "c57e6f7f-56eb-4d7d-ac85-4eab361710f2",
+					"url": "http://localhost:8080/ubm-backend/v1/applications/1/pages",
+					"method": "POST",
+					"collectionId": "0489bf15-519d-4c5d-a381-fb6b112b4fad",
+					"name": "Create Page",
+					"description": "",
+					"headers": "Content-Type: application/json; charset=utf-8",
+					"dataMode": "raw",
+					"data": "{\"name\":\"Product B\"}",
+					"folder": "f2a64467-ab2b-4c31-9a08-95ad5fb2e922"
+				},
+				{
+					"id": "9aa20b0f-ce10-41d1-be4e-a5f5729220fa",
+					"url": "http://localhost:8080/ubm-backend/v1/applications/1/pages/28",
+					"method": "DELETE",
+					"collectionId": "0489bf15-519d-4c5d-a381-fb6b112b4fad",
+					"name": "Delete Pages",
+					"description": "",
+					"headers": "",
+					"dataMode": "raw",
+					"data": "",
+					"folder": "f2a64467-ab2b-4c31-9a08-95ad5fb2e922"
+				}
+			],
+			"order": []
+		}
+	],
+	"environments": [
+		{
+			"id": "1d7c0660-8b3c-4cd9-9a21-a81b3fddfad5",
+			"name": "API-Flow Imports",
+			"values": [],
+			"timestamp": 1490016593573
+		}
+	]
+}

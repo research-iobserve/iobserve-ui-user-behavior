@@ -1,0 +1,16 @@
+exports[`<Intro /> should render 1`] = `
+<div
+  className="gFpPfz jumbotron">
+  <div
+    className="container">
+    <h1
+      className="fdavpS">
+      User Model Behavior Visualization
+    </h1>
+    <p
+      className="lead">
+      Below is a list of currently available user behavior graphs. Please select one to inspect it.
+    </p>
+  </div>
+</div>
+`;

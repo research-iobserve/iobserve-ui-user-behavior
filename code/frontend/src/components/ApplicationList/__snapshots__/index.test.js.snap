@@ -1,0 +1,91 @@
+exports[`<ApplicationList /> should render 1`] = `
+<div
+  className="kCETdc">
+  <div
+    className="container">
+    <div
+      className="fgueNY row" />
+  </div>
+</div>
+`;
+
+exports[`<ApplicationList /> should render a list 1`] = `
+<div
+  className="kCETdc">
+  <div
+    className="container">
+    <div
+      className="fgueNY row">
+      <div
+        className="bTmpoo card">
+        <div
+          className="card-block">
+          <h4
+            className="card-title">
+            amazon.de
+          </h4>
+          <p
+            className="card-text">
+            ...
+          </p>
+        </div>
+        <div
+          className="card-block">
+          <a
+            className="card-link"
+            onClick={[Function]}
+            style={Object {}}>
+            Inspect
+          </a>
+        </div>
+      </div>
+      <div
+        className="bTmpoo card">
+        <div
+          className="card-block">
+          <h4
+            className="card-title">
+            facebook.com
+          </h4>
+          <p
+            className="card-text">
+            ...
+          </p>
+        </div>
+        <div
+          className="card-block">
+          <a
+            className="card-link"
+            onClick={[Function]}
+            style={Object {}}>
+            Inspect
+          </a>
+        </div>
+      </div>
+      <div
+        className="bTmpoo card">
+        <div
+          className="card-block">
+          <h4
+            className="card-title">
+            heise.de
+          </h4>
+          <p
+            className="card-text">
+            ...
+          </p>
+        </div>
+        <div
+          className="card-block">
+          <a
+            className="card-link"
+            onClick={[Function]}
+            style={Object {}}>
+            Inspect
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,8 @@
+exports[`<NotFoundPage /> should render 1`] = `
+<div
+  className="container">
+  <h1>
+    Page not found.
+  </h1>
+</div>
+`;

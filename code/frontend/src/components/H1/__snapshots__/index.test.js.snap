@@ -1,0 +1,4 @@
+exports[`<H1 /> should render 1`] = `
+<h1
+  className="fdavpS" />
+`;

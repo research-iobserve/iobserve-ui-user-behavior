@@ -1,0 +1,119 @@
+exports[`<Header /> should render 1`] = `
+<nav
+  className="navbar navbar-toggleable navbar-light bg-faded"
+  role="navigation">
+  <button
+    className="navbar-toggler navbar-toggler-right"
+    onClick={[Function]}
+    type="button">
+    <span
+      className="navbar-toggler-icon" />
+  </button>
+  <a
+    className="navbar-brand"
+    onClick={[Function]}
+    style={Object {}}>
+    iObserve UBM Visualization
+  </a>
+  <div
+    className="collapse navbar-collapse"
+    style={Object {}}>
+    <ul
+      className="ml-auto navbar-nav">
+      <li
+        className="nav-item">
+        <a
+          className="nav-link"
+          onClick={[Function]}
+          style={Object {}}>
+          Visualization
+        </a>
+      </li>
+      <li
+        className="nav-item dropdown">
+        <a
+          aria-expanded={false}
+          aria-haspopup="true"
+          className="dropdown-toggle nav-link"
+          color="secondary"
+          data-toggle="dropdown"
+          href="#"
+          onClick={[Function]}>
+          Editor
+        </a>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu dropdown-menu-right"
+          role="menu"
+          tabIndex="-1">
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0">
+            <a
+              onClick={[Function]}
+              style={Object {}}>
+              New Application
+            </a>
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0">
+            <a
+              onClick={[Function]}
+              style={Object {}}>
+              All Applications
+            </a>
+          </button>
+        </div>
+      </li>
+      <li
+        className="nav-item dropdown">
+        <a
+          aria-expanded={false}
+          aria-haspopup="true"
+          className="dropdown-toggle nav-link"
+          color="secondary"
+          data-toggle="dropdown"
+          href="#"
+          onClick={[Function]}>
+          Settings
+        </a>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu dropdown-menu-right"
+          role="menu"
+          tabIndex="-1">
+          <h6
+            className="dropdown-header"
+            onClick={[Function]}
+            tabIndex="-1">
+            Layout
+          </h6>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0">
+            cose
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0">
+            grid
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0">
+            <strong>
+              breadthfirst
+            </strong>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;

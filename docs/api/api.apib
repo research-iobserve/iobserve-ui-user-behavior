@@ -1,0 +1,281 @@
+FORMAT: 1A
+HOST: http://localhost:8080/v1
+
+# iObserve UBM Api Docs
+This API Blueprint documents the API for getting data into the visualization
+backend.
+
+# Data Structures
+
+## PageData
++ id: pcm.page.homepage (required) - An internal page id from the pcm
++ name: Homepage - Name of the page
++ extra (object) - A dictionary containing key value pairs
+    + key: value
+    + key2: value2
+
+## PageList (array)
++ (PageData)
++ (PageData)
+    + id: pcm.page.search
+    + name: Search
+
+## VisitData
++ id: pcm.visit.flow1 (required) - An internal visit id from the pcm
++ action (string) - The action the user did
++ count (number) - A number containing information about the user flow
++ start: pcm.page.homepage - Reference to the starting page of the visit
++ end: pcm.page.search - Reference to the ending page of the visit
+
+## VisitList (array)
++ (VisitData)
++ (VisitData)
+    + id: pcm.visit.flow2
+
+## ApplicationData
++ id: pcm.application.website1 (required) - An internal application id from the pcm
++ name: Website1 - Name of the application
++ description: Our Website1 is - Description of the application
++ custom (boolean) - Indicator if this graph was created with the editor
+
+## ApplicationList (array)
++ (ApplicationData)
+
+# Group Pages
+This section groups all operations on application pages.
+
+## Page List [/applications/0/pages]
+
+### Get Pages [GET]
+Get a list of all pages of the application.
+
++ Response 200 (application/json)
+
+    + Attributes (PageList)
+
+### Create New Page [POST]
+Creates a new page.
+
++ Request (application/json)
+
+    + Attributes (PageData)
+
++ Response 201 (application/json)
+
+    + Attributes (PageData)
+
+## Page [/applications/0/pages/{id}]
+A page.
+
++ Parameters
+
+    + id: pcm.page.homepage (required) - Unique identifier for a page
+
++ Attributes (PageData)
+
+### Get Page [GET]
+Get a single page.
+
++ Response 200 (application/json)
+
+    + Attributes (PageData)
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "error": "Page not found"
+            }
+
+### Update a Page [PUT]
+Update a single page.
+
++ Request (application/json)
+
+    + Attributes (PageData)
+
++ Response 200
+
+    + Attributes (PageData)
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "error": "Page not found"
+            }
+
+### Delete a Page [DELETE]
+Delete a page. All visits connected to the page are deleted too.
+
++ Response 200
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "error": "Page not found"
+            }
+
+# Group Visits
+This section groups all operations on application visits.
+
+## Visit List [/applications/0/visits]
+
+### Get Visits [GET]
+Get a list of all visits of the application.
+
++ Response 200 (application/json)
+
+    + Attributes (VisitList)
+
+### Create New Visit [POST]
+Creates a new visit.
+
++ Request (application/json)
+
+    + Attributes (VisitData)
+
++ Response 201 (application/json)
+
+    + Attributes (VisitData)
+
+## Visit [/applications/0/visits/{id}]
+A visit.
+
++ Parameters
+
+    + id: pcm.visit.flow1 (required) - Unique identifier for a visit
+
++ Attributes (VisitData)
+
+### Get Visit [GET]
+Get a single visit.
+
++ Response 200 (application/json)
+
+    + Attributes (VisitData)
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "error": "Visit not found"
+            }
+
+### Update a Visit [PUT]
+Update a single visit.
+
++ Request (application/json)
+
+    + Attributes (VisitData)
+
++ Response 200
+
+    + Attributes (VisitData)
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "error": "Visit not found"
+            }
+
+### Delete a Visit [DELETE]
+Delete a visit.
+
++ Response 200
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "error": "Visit not found"
+            }
+
+# Group Applications
+This section groups all operations on whole applications.
+
+## Application List [/applications]
+
+### Get Applications [GET]
+Get a list of all applications.
+
++ Response 200 (application/json)
+
+    + Attributes (ApplicationList)
+
+### Create New Application [POST]
+Creates a new application.
+
++ Request (application/json)
+
+    + Attributes (ApplicationData)
+
++ Response 201 (application/json)
+
+    + Attributes (ApplicationData)
+
+## Application [/applications/{id}]
+An Application.
+
++ Parameters
+
+    + id: pcm.application.website1 (required) - Unique identifier for an application
+
++ Attributes (ApplicationData)
+
+### Get Application [GET]
+Get a single application.
+
++ Response 200 (application/json)
+
+    + Attributes (ApplicationData)
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "error": "Application not found"
+            }
+
+### Update an Application [PUT]
+Update an application.
+
++ Request (application/json)
+
+    + Attributes (object)
+        + name: Website2
+
++ Response 200 (application/json)
+
+    + Attributes (ApplicationData)
+        + name: Website2
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "error": "Application not found"
+            }
+
+### Delete an Application [DELETE]
+Delete an application. All visits and pages associated with the application are deleted too.
+
++ Response 200
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "error": "Application not found"
+            }
