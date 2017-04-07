@@ -1,12 +1,8 @@
-# Daniel Banck, Bachelor Thesis
+# iObserve User Behavior Model Visualization Prototype
 
 ## Code
 
-Contains a working prototype.
-
-## Writing
-
-Contains the proposal, thesis and presentations
+Contains a working prototype
 
 ## Docs
 

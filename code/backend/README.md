@@ -1,5 +1,3 @@
-# User Behavior Model Visualization Prototype
-
 ## Setup
 
 Make sure that you have following requirements installed:
