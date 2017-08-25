@@ -1,4 +1,4 @@
 // @flow
 
-export const API_URL = "http://localhost:8080/ubm-backend/v1";
-export const WS_URL = "ws://localhost:8080/ubm-backend/v1/changestream";
+export const API_URL = "http://logic:8080/ubm-backend/v1";
+export const WS_URL = "ws://logic:8080/ubm-backend/v1/changestream";

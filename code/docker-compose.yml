@@ -7,11 +7,18 @@ services:
       - "7687:7687"
     environment:
       NEO4J_AUTH: "none"
-  app:
-    build: .
+  logic:
+    build: backend/
     ports:
       - "8080:8080"
     links:
       - db
     volumes:
-      - ".:/code"
+      - ".:/backend/code"
+  frontend:
+    build: frontend/
+    ports:
+      - "3000:3000"
+    links:
+      - logic
+    
